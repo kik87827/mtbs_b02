@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html')
+<body class="front_body">
+	<div class="page_wrap full_page_wrap">
+		<header class="header_zone">
+			<div class="header_inwrap">
+				<h1 class="toplogo"><a href="#" class="toplogo_item"><span class="toplogo_text">엠클릭 시스템</span></a></h1>
+				<div class="header_util_wrap">
+					<p class="header_util">안녕하세요.<strong class="header_sym">성민영님</strong></p>
+				</div>
+			</div>
+			<div class="header_smenu_zone">
+				<!-- 230123 추가 -->
+				<div class="header_smenu_list_wrap">
+					<ul class="header_smenu_list">
+						<li>
+							<a href="#" class="header_smenu ico_s01">
+								<div class="smenu_text">상담현황</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_smenu ico_s02">
+								<div class="smenu_text">출발현황</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_smenu ico_s03">
+								<div class="smenu_text">예약현황</div>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#" class="header_smenu ico_s04">
+								<div class="smenu_text">입금현황</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- // 230123 추가 -->
+			</div>
+		</header>
+		<section class="mid_section">
+			<div class="ms_fieldset_wrap">
+				<div class="ms_fitem_wrap">
+					<div class="ms_fitem">
+						<span class="ms_fitem_label">입금일자</span>
+						<div class="ms_fitem_form">
+							<div class="ms_fxdata">2022.01.01 ~ 2022.01.01</div>
+							<a href="#" class="btn_msico ico_calendar" id="calendar_call"><span class="hdtext">달력</span></a>
+						</div>
+					</div>
+					<div class="ms_fitem">
+						<select class="form_bsel"><option value="0">은행선택</option><option selected value="1">우리은행</option><option value="2">옵션 2</option></select>
+					</div>
+					<div class="ms_fitem">
+						<select class="form_bsel"><option value="0">계좌선택</option><option selected value="1">112-5565-565484</option><option value="2">옵션 2</option></select>
+					</div>
+				</div>
+				<div class="btn_botsubmit_w"><a href="#" class="btn_botsubmit">검색하기</a></div>
+			</div>
+			<div class="data_result_wrap">
+				<div class="data_more_row"><a href="#" class="btn_data_more"><span class="hdtext">더보기</span></a></div>
+				<div class="data_main_row">
+					<div class="data_main_label">TOTAL</div>
+					<div class="data_main_value">
+						<div class="data_value_obj">
+							<span class="data_value_count">4</span>
+							<span class="data_value_unit">명</span>
+						</div>
+						<div class="data_value_obj">
+							<span class="data_value_count">1,540,000</span>
+							<span class="data_value_unit">원</span>
+						</div>
+					</div>
+				</div>
+				<div class="data_linkage_row">
+					<ul class="data_sort_list">
+						<li><a href="#" class="btn_data_sort active">최신순</a></li>
+					</ul>
+				</div>
+				<div class="data_linkage_item_row type2">
+					<div class="data_linkage_item">
+						<table class="data_fv_table type2">
+							<tr>
+								<th><span class="data_fvwpsp">입금일자</span></th>
+								<td><span class="data_fvitem">2022.01.01</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">계좌정보</span></th>
+								<td><span class="data_fvitem">우리은행 1231-1312-1313</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">입금자명</span></th>
+								<td><span class="data_fvitem">정기호</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">입금금액</span></th>
+								<td><span class="data_fvitem">50,000원</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="data_linkage_item">
+						<table class="data_fv_table type2">
+							<tr>
+								<th><span class="data_fvwpsp">입금일자</span></th>
+								<td><span class="data_fvitem">2022.01.01</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">계좌정보</span></th>
+								<td><span class="data_fvitem">우리은행 1231-1312-1313</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">입금자명</span></th>
+								<td><span class="data_fvitem">정기호</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">입금금액</span></th>
+								<td><span class="data_fvitem">50,000원</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="nodata_wrap"><p class="nodata">데이터가 없습니다.</p></div>
+				</div>
+			</div>
+		</section>
+		@@include('./include/calendar_popup.html')
+	</div>
+</body>
+</html>

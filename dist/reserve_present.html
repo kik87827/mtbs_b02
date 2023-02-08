@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/dynamicListener.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap full_page_wrap">
+		<header class="header_zone">
+			<div class="header_inwrap">
+				<h1 class="toplogo"><a href="#" class="toplogo_item"><span class="toplogo_text">엠클릭 시스템</span></a></h1>
+				<div class="header_util_wrap">
+					<p class="header_util">안녕하세요.<strong class="header_sym">성민영님</strong></p>
+				</div>
+			</div>
+			<div class="header_smenu_zone">
+				<!-- 230123 추가 -->
+				<div class="header_smenu_list_wrap">
+					<ul class="header_smenu_list">
+						<li>
+							<a href="#" class="header_smenu ico_s01">
+								<div class="smenu_text">상담현황</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_smenu ico_s02">
+								<div class="smenu_text">출발현황</div>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#" class="header_smenu ico_s03">
+								<div class="smenu_text">예약현황</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_smenu ico_s04">
+								<div class="smenu_text">입금현황</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- // 230123 추가 -->
+			</div>
+		</header>
+		<section class="mid_section">
+			<div class="ms_fieldset_wrap">
+				<div class="ms_fitem_wrap">
+					<div class="ms_fitem">
+						<span class="ms_fitem_label">예약일</span>
+						<div class="ms_fitem_form">
+							<div class="ms_fxdata">2022.01.01 ~ 2022.01.01</div>
+							<a href="#" class="btn_msico ico_calendar" id="calendar_call"><span class="hdtext">달력</span></a>
+						</div>
+					</div>
+					<div class="ms_fitem">
+						<input type="text" class="form_input" placeholder="고객명을 입력해주세요">
+					</div>
+					<div class="ms_fitem">
+						<select class="form_bsel ready">
+							<option value="0">진행구분</option>
+							<option value="1">옵션 1</option>
+							<option value="2">옵션 2</option>
+						</select>
+					</div>
+				</div>
+				<div class="btn_botsubmit_w"><a href="#" class="btn_botsubmit">검색하기</a></div>
+			</div>
+			<div class="data_result_wrap">
+				<div class="data_more_row"><a href="#" class="btn_data_more"><span class="hdtext">더보기</span></a></div>
+				<div class="data_main_row">
+					<div class="data_main_label">TOTAL</div>
+					<div class="data_main_value">
+						<div class="data_value_obj">
+							<span class="data_value_count">4</span>
+							<span class="data_value_unit">명</span>
+						</div>
+						<div class="data_value_obj">
+							<span class="data_value_count">1,540,000</span>
+							<span class="data_value_unit">원</span>
+						</div>
+					</div>
+				</div>
+				<div class="data_linkage_row">
+					<ul class="data_sort_list">
+						<li><a href="#" class="btn_data_sort active">최신순</a></li>
+						<li><a href="#" class="btn_data_sort">요금낮은순</a></li>
+					</ul>
+				</div>
+				<div class="data_linkage_item_row type2">
+					<div class="data_linkage_item">
+						<table class="data_fv_table">
+							<tr>
+								<th><span class="data_fvwpsp">예약일자</span></th>
+								<td><span class="data_fvitem">2022.01.01</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">행사명</span></th>
+								<td><span class="data_fvitem">제주골프투어</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">여행기간</span></th>
+								<td><span class="data_fvitem">2022.01.01 ~ 2022.01.22</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">예약자명</span></th>
+								<td><span class="data_fvitem">정기호 4명(예약완료)</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">정산금액</span></th>
+								<td><span class="data_fvitem">50,000원</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="data_linkage_item">
+						<table class="data_fv_table">
+							<tr>
+								<th><span class="data_fvwpsp">예약일자</span></th>
+								<td><span class="data_fvitem">2022.01.01</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">행사명</span></th>
+								<td><span class="data_fvitem">제주골프투어</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">여행기간</span></th>
+								<td><span class="data_fvitem">2022.01.01 ~ 2022.01.22</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">예약자명</span></th>
+								<td><span class="data_fvitem">정기호 4명(예약완료)</span></td>
+							</tr>
+							<tr>
+								<th><span class="data_fvwpsp">정산금액</span></th>
+								<td><span class="data_fvitem">50,000원</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="nodata_wrap">
+						<p class="nodata">데이터가 없습니다.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- popup -->
+		<div class="popup_wrap" id="calendarPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">검색조건 설정</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<div class="while_form_row">
+							<div class="inline_calendar_item">
+								<input type="text" class="input_calendar" id="start_date" placeholder="시작일">
+							</div>
+							<span class="inline_calendar_else">~</span>
+							<div class="inline_calendar_item">
+								<input type="text" class="input_calendar" id="end_date" placeholder="종료일">
+							</div>
+						</div>
+						<div class="control_box_vitem_group">
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">어제</span></a>
+								<a href="#" class="btn_control_box current active"><span class="btn_control_box_text">오늘</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">내일</span></a>
+							</div>
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난주</span></a>
+								<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번주</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음주</span></a>
+							</div>
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난달</span></a>
+								<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번달</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음달</span></a>
+							</div>
+						</div>
+						<div class="btn_botsubmit_w type2"><a href="#" class="btn_botsubmit">조회</a></div>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			document.addEventListener("DOMContentLoaded", function() {
+				if (url_2 === "calendar") {
+					var calendar_obj = new DesignPopup({
+						selector: "#calendarPopup"
+					});
+				}
+				let calendar_call = document.querySelector("#calendar_call");
+				calendar_call.addEventListener("click", (e) => {
+					var calendar_obj = new DesignPopup({
+						selector: "#calendarPopup"
+					});
+				}, false);
+				calendarCall();
+				btnActiveAction(); /* 230123 추가 */
+			});
+
+			/* 230123 추가 */
+			function btnActiveAction() {
+				const btn_control_box = document.querySelectorAll(".btn_control_box");
+				let active_control_box = document.querySelector(".btn_control_box.active");
+				btn_control_box.forEach((element, index) => {
+					element.addEventListener("click", (e) => {
+						e.preventDefault();
+						if (active_control_box) {
+							active_control_box.classList.remove("active");
+						}
+						e.currentTarget.classList.add("active");
+
+						active_control_box = e.currentTarget;
+					});
+				})
+			}
+
+			function calendarCall() {
+				$(function() {
+					$(".input_calendar").datepicker({
+						monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+						dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+						changeMonth: true,
+						changeYear: true,
+						dateFormat: 'yy-mm-dd',
+						beforeShow(input, inst) {
+							console.log(input, inst)
+							$(".popup_contentlow").append($(".ui-datepicker").css({
+								left: ""
+							}))
+
+						}
+					});
+					$(".input_calendar").on("focus", function() {
+						$(".ui-datepicker").css({
+							left: '',
+							top: $(this).position().top + $(this).outerHeight()
+						})
+					});
+				});
+			}
+		</script>
+	</div>
+</body>
+
+</html>

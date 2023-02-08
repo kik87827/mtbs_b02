@@ -1,0 +1,102 @@
+<!-- popup -->
+<div class="popup_wrap" id="calendarPopup">
+	<div class="bg_dim"></div>
+	<div class="popup_item">
+		<div class="popup_titlelow">
+			<h3 class="popup_title">검색조건 설정</h3>
+		</div>
+		<div class="popup_contentlow">
+			<div class="pcont_inwrap">
+				<div class="while_form_row">
+					<div class="inline_calendar_item">
+						<input type="text" class="input_calendar" id="start_date" placeholder="시작일">
+					</div>
+					<span class="inline_calendar_else">~</span>
+					<div class="inline_calendar_item">
+						<input type="text" class="input_calendar" id="end_date" placeholder="종료일">
+					</div>
+				</div>
+				<div class="control_box_vitem_group">
+					<div class="control_box_vitem">
+						<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">어제</span></a>
+						<a href="#" class="btn_control_box current active"><span class="btn_control_box_text">오늘</span></a>
+						<a href="#" class="btn_control_box next"><span class="btn_control_box_text">내일</span></a>
+					</div>
+					<div class="control_box_vitem">
+						<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난주</span></a>
+						<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번주</span></a>
+						<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음주</span></a>
+					</div>
+					<div class="control_box_vitem">
+						<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난달</span></a>
+						<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번달</span></a>
+						<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음달</span></a>
+					</div>
+				</div>
+				<div class="btn_botsubmit_w type2"><a href="#" class="btn_botsubmit">조회</a></div>
+			</div>
+		</div>
+		<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+	</div>
+</div>
+<!-- // popup -->
+<script>
+	// 퍼블확인용
+	let url = window.location.href.split('?')[1];
+	let url_2 = url !== undefined ? url.split('#')[0] : null;
+	document.addEventListener("DOMContentLoaded", function() {
+		if(url_2 === "calendar"){
+			var calendar_obj = new DesignPopup({
+				selector: "#calendarPopup"
+			});
+		}
+		let calendar_call = document.querySelector("#calendar_call");
+		calendar_call.addEventListener("click",(e)=>{
+			var calendar_obj = new DesignPopup({
+				selector: "#calendarPopup"
+			});
+		},false);
+		calendarCall();
+		btnActiveAction(); /* 230123 추가 */
+	});
+
+	/* 230123 추가 */
+	function btnActiveAction(){
+		const btn_control_box = document.querySelectorAll(".btn_control_box");
+		let active_control_box = document.querySelector(".btn_control_box.active");
+		btn_control_box.forEach((element,index)=>{
+			element.addEventListener("click",(e)=>{
+				e.preventDefault();
+				if(active_control_box){
+					active_control_box.classList.remove("active");
+				}
+				e.currentTarget.classList.add("active");
+
+				active_control_box = e.currentTarget;
+			});
+		})
+	}
+
+	function calendarCall(){
+		$(function(){
+			$(".input_calendar").datepicker({
+				monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				beforeShow(input,inst){
+					console.log(input,inst)
+					$(".popup_contentlow").append($(".ui-datepicker").css({left : "" }))
+					
+				}
+			});
+			$(".input_calendar").on("focus",function(){
+				$(".ui-datepicker").css({
+					left : '',
+					top : $(this).position().top + $(this).outerHeight()
+				})
+			});
+		});
+	}
+</script>
