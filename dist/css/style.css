@@ -1102,7 +1102,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   margin: 0 auto;
 }
 .header_smenu_list > li {
-  padding: 0 0.625rem;
+  padding: 0 1.875rem;
   display: table-cell;
 }
 .header_smenu_list > li.active .header_smenu .smenu_text {
@@ -1118,6 +1118,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   position: absolute;
   bottom: -1px;
   left: -0.625rem;
+}
+.header_smenu_list > li:first-of-type {
+  padding-left: 0;
 }
 .header_smenu_list > li:last-of-type {
   padding-right: 0;
@@ -1210,6 +1213,14 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
     left: 0;
     width: 100%;
     transform: translateX(0);
+  }
+  .header_smenu_list > li {
+    padding: 0 0.9375rem;
+  }
+}
+@media (max-width: 374px) {
+  .header_smenu_list > li {
+    padding: 0 0.625rem;
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) {
@@ -2570,7 +2581,7 @@ input.form_input {
   height: 2.8125rem;
   line-height: 1;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.1875rem;
 }
 input.form_input.calendar_call {
   padding-right: 2.8125rem !important;
