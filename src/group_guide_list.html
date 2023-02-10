@@ -43,8 +43,138 @@
 			</div>
 		</header>
 		<section class="mid_section">
-			내용이 들어갑니다.
+			<div class="ms_fieldset_wrap">
+				<div class="ms_fitem_wrap">
+					<div class="ms_fitem">
+						<span class="ms_fitem_label">출발일</span>
+						<a href="#" class="ms_fitem_form" id="calendar_call">
+							<div class="ms_fxdata">2022.01.01 ~ 2022.01.01</div>
+							<span class="btn_msico ico_calendar"><span class="hdtext">달력</span></span>
+						</a>
+					</div>
+					<div class="ms_fitem">
+						<input type="text" class="form_input" placeholder="가이드명을 입력해주세요">
+					</div>
+				</div>
+				<div class="btn_botsubmit_w"><a href="#" class="btn_botsubmit">검색하기</a></div>
+			</div>
+			<div class="data_result_wrap">
+				<div class="data_main_row">
+					<div class="data_main_label">TOTAL</div>
+					<div class="data_main_value">
+						<div class="data_value_obj">
+							<span class="data_value_count">12</span>
+							<span class="data_value_unit">건</span>
+							<span class="data_value_unit">(110명)</span>
+						</div>
+					</div>
+				</div>
+				<div class="data_linkage_row align_type2">
+					<ul class="data_sort_list">
+						<li><a href="#" class="btn_data_sort sort_down">출발일</a></li>
+						<li><a href="#" class="btn_data_sort sort_up">출발일</a></li>
+					</ul>
+				</div>
+				<div class="data_linkage_item_row">
+					<div class="data_linkage_item">
+						<div class="data_inlinkage_block">
+							<table class="data_fv_table">
+								<tbody>
+									<tr>
+										<th><span class="data_fvwpsp">여행기간</span></th>
+										<td><span class="data_fvitem">2022-01-01~2022-01-05 (4박5일)</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">행사명</span></th>
+										<td><span class="data_fvitem">하얏트리젠시 다낭 리조트</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">거래처명</span></th>
+										<td><span class="data_fvitem">교원투어(성민영)</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">인원</span></th>
+										<td><span class="data_fvitem">성인12</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">진행구분</span></th>
+										<td><span class="data_fvitem greensym">확정</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="data_inlinkage_block">
+							<ul class="data_fv_tail_list">
+								<li>
+									<div class="data_fv_tail_item">
+										<span class="fv_tail_word">[시드니 가이드]</span>
+										<span class="fv_tail_word emp">백경탁</span>
+										<span class="fv_tail_word emp">[TEL] 201 1231 21</span>
+									</div>
+								</li>
+								<li>
+									<div class="data_fv_tail_item">
+										<span class="fv_tail_word">[뉴질랜드 가이드]</span>
+										<span class="fv_tail_word emp">오윤희</span>
+										<span class="fv_tail_word emp">[TEL] 201 1231 21</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="data_linkage_item">
+						<div class="data_inlinkage_block">
+							<table class="data_fv_table">
+								<tbody>
+									<tr>
+										<th><span class="data_fvwpsp">여행기간</span></th>
+										<td><span class="data_fvitem">2022-01-01~2022-01-05 (4박5일)</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">행사명</span></th>
+										<td><span class="data_fvitem">하얏트리젠시 다낭 리조트</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">거래처명</span></th>
+										<td><span class="data_fvitem">교원투어(성민영)</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">인원</span></th>
+										<td><span class="data_fvitem">성인12</span></td>
+									</tr>
+									<tr>
+										<th><span class="data_fvwpsp">진행구분</span></th>
+										<td><span class="data_fvitem greensym">확정</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="data_inlinkage_block">
+							<ul class="data_fv_tail_list">
+								<li>
+									<div class="data_fv_tail_item">
+										<span class="fv_tail_word">[시드니 가이드]</span>
+										<span class="fv_tail_word emp">백경탁</span>
+										<span class="fv_tail_word emp">[TEL] 201 1231 21</span>
+									</div>
+								</li>
+								<li>
+									<div class="data_fv_tail_item">
+										<span class="fv_tail_word">[뉴질랜드 가이드]</span>
+										<span class="fv_tail_word emp">오윤희</span>
+										<span class="fv_tail_word emp">[TEL] 201 1231 21</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nodata_wrap">
+						<p class="nodata">데이터가 없습니다.</p>
+					</div>
+				</div>
+			</div>
 		</section>
+		@@include('./include/calendar_popup.html')
 	</div>
 </body>
 </html>

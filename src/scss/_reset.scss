@@ -46,6 +46,9 @@ input:-webkit-autofill:active {
 input:-webkit-autofill { 
     -webkit-background-clip: text;
 }
+.greensym{color:#2da012 !important;
+    *{color:#2da012 !important;}
+}
 .orgsym{color:#f35413 !important;}
 .bsym,
 .bsym *{font-weight:500;}
