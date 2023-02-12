@@ -27,6 +27,9 @@ html,
 .mid_section{padding:rem(15) rem(18.5) rem(48);
     &.type2{padding-top:rem(24);}
     &.type3{padding-right:0;padding-left:0;}
+    &.fulltype{min-height:calc(100vh - rem(51));padding:0 0 rem(48);box-sizing: border-box;}
+    &.bgtype{background:#f5f5f5;}
+    &.type4{padding:0 0 rem(48);}
 }
 .footer_zone{background:#fdfdfd;border-top:1px solid #dedede;}
 .footer_inwrap{padding:rem(18) rem(18.5);font-size:rem(15);}
