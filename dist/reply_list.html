@@ -57,8 +57,173 @@
 			</div>
 		</header>
 		<section class="mid_section">
-			내용이 들어갑니다.
+			<div class="ms_fieldset_wrap">
+				<div class="ms_fitem_wrap">
+					<div class="ms_fitem">
+						<span class="ms_fitem_label">등록일</span>
+						<a href="#" class="ms_fitem_form" id="calendar_call">
+							<div class="ms_fxdata">2022.01.01 ~ 2022.01.01</div>
+							<span class="btn_msico ico_calendar"><span class="hdtext">달력</span></span>
+						</a>
+					</div>
+					<div class="ms_fitem">
+						<input type="text" class="form_input" placeholder="등록자, 부서를 입력해주세요">
+					</div>
+				</div>
+				<div class="btn_botsubmit_w"><a href="#" class="btn_botsubmit">검색하기</a></div>
+			</div>
+			<div class="data_result_wrap">
+				<div class="data_main_row">
+					<div class="data_main_label">TOTAL</div>
+					<div class="data_main_value">
+						<div class="data_value_obj">
+							<span class="data_value_count">2</span>
+							<span class="data_value_unit">건</span>
+						</div>
+					</div>
+				</div>
+				<div class="data_linkage_row align_type2">
+					<ul class="data_sort_list">
+						<li><a href="#" class="btn_data_sort sort_down">등록일</a></li>
+						<li><a href="#" class="btn_data_sort sort_up">등록일</a></li>
+					</ul>
+				</div>
+				<div class="data_linkage_item_row">
+					<div class="data_linkage_item">
+						<div class="data_inlinkage_block">
+							<div class="data_linkage_main_copy">시드니 오페라하우스 한국인 가이드투어 2023년4월1일부터 매일 운영</div>
+							<div class="data_linkage_sub_copy">2023-04-14 ~ 2023-04-19 (0박1일)</div>
+							<div class="data_linkage_else_copy">HNT-I-1251-230217-ZZ</div>
+						</div>
+						<div class="data_inlinkage_block">
+							<div class="rendar_summary_rows">
+								<div class="rendar_summary_maincols">
+									<span class="rendar_maintext">남규미계장</span>
+									<span class="rendar_maintext">머뭄투어</span>
+								</div>
+								<div class="rendar_summary_subcols">
+									<span class="rendar_subtext">2022-11-11 15:07</span>
+								</div>
+							</div>
+							<div class="rendar_tail_rows">
+								내용이 들어갑니다. 내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.
+								내용이 들어갑니다. 내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.
+								내용이 들어갑니다.
+							</div>
+							<div class="rendar_else_rows">
+								<ul class="rendar_textitem_list">
+									<li><a href="#" class="rendar_textitem">743345-음성양식서.pdf</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<!-- popup -->
+		<div class="popup_wrap" id="calendarPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">검색조건 설정</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<div class="while_form_row">
+							<div class="inline_calendar_item">
+								<input type="text" class="input_calendar" id="start_date" placeholder="시작일">
+							</div>
+							<span class="inline_calendar_else">~</span>
+							<div class="inline_calendar_item">
+								<input type="text" class="input_calendar" id="end_date" placeholder="종료일">
+							</div>
+						</div>
+						<div class="control_box_vitem_group">
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">어제</span></a>
+								<a href="#" class="btn_control_box current active"><span class="btn_control_box_text">오늘</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">내일</span></a>
+							</div>
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난주</span></a>
+								<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번주</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음주</span></a>
+							</div>
+							<div class="control_box_vitem">
+								<a href="#" class="btn_control_box prev"><span class="btn_control_box_text">지난달</span></a>
+								<a href="#" class="btn_control_box current"><span class="btn_control_box_text">이번달</span></a>
+								<a href="#" class="btn_control_box next"><span class="btn_control_box_text">다음달</span></a>
+							</div>
+						</div>
+						<div class="btn_botsubmit_w type2"><a href="#" class="btn_botsubmit">조회</a></div>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			document.addEventListener("DOMContentLoaded", function() {
+				if (url_2 === "calendar") {
+					var calendar_obj = new DesignPopup({
+						selector: "#calendarPopup"
+					});
+				}
+				let calendar_call = document.querySelector("#calendar_call");
+				calendar_call.addEventListener("click", (e) => {
+					var calendar_obj = new DesignPopup({
+						selector: "#calendarPopup"
+					});
+				}, false);
+				calendarCall();
+				btnActiveAction(); /* 230123 추가 */
+			});
+
+			/* 230123 추가 */
+			function btnActiveAction() {
+				const btn_control_box = document.querySelectorAll(".btn_control_box");
+				let active_control_box = document.querySelector(".btn_control_box.active");
+				btn_control_box.forEach((element, index) => {
+					element.addEventListener("click", (e) => {
+						e.preventDefault();
+						if (active_control_box) {
+							active_control_box.classList.remove("active");
+						}
+						e.currentTarget.classList.add("active");
+
+						active_control_box = e.currentTarget;
+					});
+				})
+			}
+
+			function calendarCall() {
+				$(function() {
+					$(".input_calendar").datepicker({
+						monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+						dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+						changeMonth: true,
+						changeYear: true,
+						dateFormat: 'yy-mm-dd',
+						beforeShow(input, inst) {
+							console.log(input, inst)
+							$(".popup_contentlow").append($(".ui-datepicker").css({
+								left: ""
+							}))
+
+						}
+					});
+					$(".input_calendar").on("focus", function() {
+						$(".ui-datepicker").css({
+							left: '',
+							top: $(this).position().top + $(this).outerHeight()
+						})
+					});
+				});
+			}
+		</script>
 	</div>
 </body>
 

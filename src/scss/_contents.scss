@@ -191,6 +191,29 @@ input.form_input{border:0;border-bottom:1px solid #ebebeb;height:rem(45);line-he
     &:last-of-type{padding-bottom:0;margin-bottom:0;border-bottom:0;}
 }
 
+.data_linkage_sub_copy{color:#000;opacity:.7;margin-top:rem(3);font-size:rem(14)}
+.data_linkage_else_copy{color:#000;margin-top:rem(2);font-size:rem(14)}
+.rendar_summary_rows{display:flex;justify-content: space-between;font-size:rem(14)}
+.rendar_summary_maincols{display:flex;align-items: center;margin-top:rem(-5)}
+.rendar_summary_subcols{}
+.rendar_maintext{
+    color:#000;display:inline-block; font-weight:500;margin:rem(5) rem(10) 0 0;
+    &:last-of-type{}
+}
+.rendar_subtext{color:#000;opacity:.7;display:inline-block;}
+.rendar_tail_rows{
+    color:#000;margin-top:rem(3);font-size:rem(14);line-height:1.4;word-break: break-all;
+    *{word-break: break-all;}
+}
+.rendar_textitem_list{
+    display:flex;flex-wrap:wrap;line-height:0;
+    > li{
+        margin:rem(5) rem(10) 0 0;
+        &:last-of-type{}
+    }
+}
+.rendar_textitem{display:inline-block;line-height:1;color:#4f46c6;font-weight:500;font-size:rem(14)}
+
 .data_linkage_sub{display:block;font-size:rem(14);color:#000000;margin-bottom:rem(2)} 
 .data_linkage_main{color:#000000;font-size:rem(16);word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;line-height:1.3;font-weight:500;} 
 .data_linkage_author{ 
@@ -424,7 +447,25 @@ text-align: left;
 .btn_control_box.current{} 
 .btn_control_box.current .btn_control_box_text{} 
  
+.page_message_item{padding:rem(80) rem(20);text-align: center;}
+.ico_page_row{}
+.ico_page{
+    display:block;margin:0 auto;width:rem(80);height:rem(80);background:#4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - rem(2))/rem(41) auto;border-radius:100%;
+    &.define_error{}
+}
+.spec_page_row{margin-top:rem(20);font-size:rem(15);}
+.spec_page_main{
+    color:#000;font-weight:700;
+    .bluesym{font-weight:700;}
+}
+.spec_page_sub{color:#666;margin-top:rem(5);word-break:keep-all;font-size:rem(14)}
+.spec_page_btn_row{
+    margin-top:rem(20);
+    .btn_box{}   
+}
+.btn_box{display:inline-block;border:1px solid rgba(0, 0, 0, 0.3);font-size:rem(13);padding:rem(10) rem(15);line-height:1;}   
  
+
 @media (max-width:1023px) and (orientation: landscape){ 
     .popup_wrap{left:0;transform:translateX(0);width:100%;} 
 } 

@@ -6,11 +6,13 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: #fff;border-ra
 /* */ 
 html,
 .front_body{}
-.page_wrap{position:relative;max-width:rem(720);margin:0 auto;min-width:rem(17.5);}
-.page_wrap:before,
-.page_wrap:after{display:block;content:'';width:calc(50% - rem(360));height:100%;position:fixed;top:0;background:#fff;z-index:70}
-.page_wrap:before{left:0;}
-.page_wrap:after{right:0;}
+.page_wrap{position:relative;max-width:rem(720);margin:0 auto;min-width:rem(17.5);
+    &:before,
+    &:after{display:block;content:'';width:calc(50% - rem(360));height:100%;position:fixed;top:0;background:#fff;z-index:70}
+    &:before{left:0;}
+    &:after{right:0;}
+    &.page_message_wrap{}
+}
 
 .header_zone{border-bottom:1px solid #cacaca;position:relative;z-index:20;
     &.sticky{position:sticky;z-index:20;top:0;left:0;width:100%;background:#fff;}
@@ -93,7 +95,6 @@ li.active .header_smenu:before{}
     &.type2{color:#4f46c6;background:#fff;}
 }
 .btn_headutil_wrap{padding-right:rem(18.5)}
-
 
 @media (max-width:720px){
     .page_wrap:before,

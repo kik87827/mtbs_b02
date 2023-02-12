@@ -198,6 +198,13 @@ input:-webkit-autofill {
   color: #2da012 !important;
 }
 
+.bluesym {
+  color: #4f46c6 !important;
+}
+.bluesym * {
+  color: #4f46c6 !important;
+}
+
 .orgsym {
   color: #f35413 !important;
 }
@@ -896,9 +903,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   margin: 0 auto;
   min-width: 1.09375rem;
 }
-
-.page_wrap:before,
-.page_wrap:after {
+.page_wrap:before, .page_wrap:after {
   display: block;
   content: "";
   width: calc(50% - 22.5rem);
@@ -908,15 +913,12 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   background: #fff;
   z-index: 70;
 }
-
 .page_wrap:before {
   left: 0;
 }
-
 .page_wrap:after {
   right: 0;
 }
-
 .header_zone {
   border-bottom: 1px solid #cacaca;
   position: relative;
@@ -3077,6 +3079,70 @@ input.form_input:focus {
   border-bottom: 0;
 }
 
+.data_linkage_sub_copy {
+  color: #000;
+  opacity: 0.7;
+  margin-top: 0.1875rem;
+  font-size: 0.875rem;
+}
+
+.data_linkage_else_copy {
+  color: #000;
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
+}
+
+.rendar_summary_rows {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.rendar_summary_maincols {
+  display: flex;
+  align-items: center;
+  margin-top: -0.3125rem;
+}
+
+.rendar_maintext {
+  color: #000;
+  display: inline-block;
+  font-weight: 500;
+  margin: 0.3125rem 0.625rem 0 0;
+}
+.rendar_subtext {
+  color: #000;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.rendar_tail_rows {
+  color: #000;
+  margin-top: 0.1875rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  word-break: break-all;
+}
+.rendar_tail_rows * {
+  word-break: break-all;
+}
+
+.rendar_textitem_list {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 0;
+}
+.rendar_textitem_list > li {
+  margin: 0.3125rem 0.625rem 0 0;
+}
+.rendar_textitem {
+  display: inline-block;
+  line-height: 1;
+  color: #4f46c6;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
 .data_linkage_sub {
   display: block;
   font-size: 0.875rem;
@@ -3735,6 +3801,50 @@ input.inline_calendar_form::-webkit-date-and-time-value {
   font-size: 0.9375rem;
   color: #333333;
   position: relative;
+  line-height: 1;
+}
+
+.page_message_item {
+  padding: 5rem 1.25rem;
+  text-align: center;
+}
+
+.ico_page {
+  display: block;
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  background: #4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - 0.125rem)/2.5625rem auto;
+  border-radius: 100%;
+}
+.spec_page_row {
+  margin-top: 1.25rem;
+  font-size: 0.9375rem;
+}
+
+.spec_page_main {
+  color: #000;
+  font-weight: 700;
+}
+.spec_page_main .bluesym {
+  font-weight: 700;
+}
+
+.spec_page_sub {
+  color: #666;
+  margin-top: 0.3125rem;
+  word-break: keep-all;
+  font-size: 0.875rem;
+}
+
+.spec_page_btn_row {
+  margin-top: 1.25rem;
+}
+.btn_box {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.8125rem;
+  padding: 0.625rem 0.9375rem;
   line-height: 1;
 }
 
