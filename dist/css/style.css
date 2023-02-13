@@ -1235,7 +1235,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
     transform: translateX(0);
   }
   .header_smenu_list > li {
-    padding: 0 0.9375rem;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 374px) {
@@ -3926,13 +3926,13 @@ input.inline_calendar_form::-webkit-date-and-time-value {
 .ico_page {
   display: block;
   margin: 0 auto;
-  width: 5rem;
-  height: 5rem;
-  background: #4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - 0.125rem)/2.5625rem auto;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - 0.125rem)/1.5625rem auto;
   border-radius: 100%;
 }
 .spec_page_row {
-  margin-top: 1.25rem;
+  margin-top: 0.625rem;
   font-size: 0.9375rem;
 }
 

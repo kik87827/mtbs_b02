@@ -494,10 +494,10 @@ text-align: left;
 .page_message_item{padding:rem(80) rem(20);text-align: center;}
 .ico_page_row{}
 .ico_page{
-    display:block;margin:0 auto;width:rem(80);height:rem(80);background:#4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - rem(2))/rem(41) auto;border-radius:100%;
+    display:block;margin:0 auto;width:rem(50);height:rem(50);background:#4f46c6 url("../images/ico_error.png") no-repeat 50% calc(50% - rem(2))/rem(25) auto;border-radius:100%;
     &.define_error{}
 }
-.spec_page_row{margin-top:rem(20);font-size:rem(15);}
+.spec_page_row{margin-top:rem(10);font-size:rem(15);}
 .spec_page_main{
     color:#000;font-weight:700;
     .bluesym{font-weight:700;}
